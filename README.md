@@ -4,6 +4,7 @@
         <h1 style="color:black;font-size:40px;">ACCEPTANCE</h1> 
     </head> 
     <body>
+        <center>
         <p>
             <b>There are things that <em>we miss</em>
             <br>that <em>we shouldn't</em>,
@@ -15,5 +16,6 @@
             <br>love who we shouldn't.</b>
         </p>
         <p>
+        </center>
     </body>
 </html>
