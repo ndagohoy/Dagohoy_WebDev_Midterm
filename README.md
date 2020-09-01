@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Acceptance</title>
         <h1 style="color:black;font-size:40px;">ACCEPTANCE</h1> 
     </head> 
     <body>
