@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:black;">
+<head>
+<h1 style="color:white;font-size:30px;">REGISTRATION FORM</h1> 
+</head>
+<body>
+ <form>
+  <table>
+   <tr>  
+ <p style="color:white;font-size:18px;"><label for="email">Email:</label><br></p>
+  <input type="email" 
+  		 id="email" 
+         name="email">
+         <br>
+ <p style="color:white;font-size:18px;"><label for="fn">Firstname:</label><br></p>
+  <input type="text"
+  		 id="textFN"
+         name="textFN"></br>
+         
+ <p style="color:white;font-size:18px;"><label for="fn">Lastname:</label><br></p>
+  <input type="text"
+  		 id="textLN"
+         name="textLN"></br>
+ <p style="color:white;font-size:18px;"> <label for="pwd">Password:</label><br></p>
+  <input type="password"
+   		 id="pwd" 
+         name="pwd"></br>    
+ <p style="color:white;font-size:18px;"><label for="gender">Gender:</label><br></p>    
+ <p style="color:white;font-size:15px;"><input type="radio" 
+  		 name="gender" 
+         value="male"> Male<br></p>
+ <p style="color:white;font-size:15px;"><input type="radio"
+  		 name="gender"
+         value="female"> Female<br></p>
+ <p style="color:white;font-size:15px;"><input type="radio" 
+  		 name="gender"
+         value="other"> Other <br> </p>
+  <tr>
+          <td colspan="2">
+         <p style="color:white;font-size:18px;">Civil Status:
+            <select name="drpCSType" id="drpCSType">
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Widowed">Widowed</option>
+            </select> 
+          </td>
+        </tr>
+        
+        <tr>
+         <td colspan="2">
+  <p><p style="color:white;font-size:18px;"><b>By creating an account you agree to our Terms & Privacy.</p></p></b>
+         <p style="color:white;font-size:18px;"><input type="checkbox" 
+                   id="CBPolicy1"
+                   name="CBPolicy1"
+                   value="I accept lorem ipsum"/>
+            <label for="cbxPolicy1">I accept the terms and conditions</label></p>
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+<p style="color:white;font-size:18px;"><input type="checkbox" 
+                   id="CBPolicy2"
+                   name="CBPolicy2"
+                   value="I accept lorem ipsum 2"/>
+            <label for="cbxPolicy2">I accept the terms and conditions 2</label></p>
+          </td>
+        </tr>        
+        <tr> 
+            <tr>
+          <td colspan="2" align="right">
+            <button id="btnReset onClick="alert(document.getElementById('txtName').value)"><b>Reset</b></button>
+            <button id="btnSignUP onClick="alert(document.getElementById('txtName').value)"><b>Sign Up</b></button>
+          </td>
+        </tr>
+      </table>
+  </form>
+</body>
+</html>
