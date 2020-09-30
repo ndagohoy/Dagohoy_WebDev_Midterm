@@ -1,0 +1,213 @@
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5bf5b5;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f03cba;
+}
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 300px;
+  min-width: 360px;
+}
+#main {
+  position: relative;
+  display: block;
+  margin: 30px 20px;
+  padding: 40px 20px;
+  background: #29f0b7;
+  border-radius: 5px;
+  font-family: "Bubblegum Sans", cursive;
+  box-shadow: -3px 2px 10px rgba(0, 0, 0, 0.4);
+  font-size: 19px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0;
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  color:#ed5f9d;
+  text-shadow: -1px 1px #000, -2px 2px #000, -3px 2px #000, -4px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#title p {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0 30px 0;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  display: block;
+  margin: 15px 0 5px 0;
+  text-align: center;
+  font-size: 17px;
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h3 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  width: 100%;
+  color:#ed5f9d;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+h4{
+ margin: 30px 0;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color:#ed5f9d;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color:#ed5f9d;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+#tribute-link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color:#eb07b2;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+ul {
+  display: block;
+  list-style-type: circle;
+  width: 80%;
+  margin: 0 auto 15px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.quote {
+  font-style: italic;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 10px 10px;
+  margin: 10px 50px;
+  line-height: 1;
+  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.2);
+ 
+}
+.item1 {
+  text-align: right;
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 54, 15);
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+a:hover {
+  color: rgb(255, 217, 15);
+}
+
+@media screen and (max-width: 360px) {
+  #main,
+  #img-div,
+  #img,
+  #img-caption,
+  body {
+    margin: 0;
+    min-width: unset;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 15px;
+    }
+  h1 {
+    font-size: 20px;
+  }
+  #title p,
+  #img-caption,
+  ul,
+  .quote {
+    font-size: 12px;
+  }
+}
+</style>
+
