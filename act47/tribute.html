@@ -1,0 +1,273 @@
+<html>
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5bf5b5;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f03cba;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 300px;
+  min-width: 360px;
+}
+#main {
+  position: relative;
+  display: block;
+  margin: 30px 20px;
+  padding: 40px 20px;
+  background: #29f0b7;
+  border-radius: 5px;
+  font-family: "Bubblegum Sans", cursive;
+  box-shadow: -3px 2px 10px rgba(0, 0, 0, 0.4);
+  font-size: 19px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0;
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  color:#ed5f9d;
+  text-shadow: -1px 1px #000, -2px 2px #000, -3px 2px #000, -4px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#title p {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0 30px 0;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  display: block;
+  margin: 15px 0 5px 0;
+  text-align: center;
+  font-size: 17px;
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h3 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  width: 100%;
+  color:#ed5f9d;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+h4{
+ margin: 30px 0;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color:#ed5f9d;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color:#ed5f9d;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+#tribute-link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color:#eb07b2;
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+ul {
+  display: block;
+  list-style-type: circle;
+  width: 80%;
+  margin: 0 auto 15px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.quote {
+  font-style: italic;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 10px 10px;
+  margin: 10px 50px;
+  line-height: 1;
+  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.2);
+ 
+}
+.item1 {
+  text-align: right;
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 54, 15);
+  font-family: "Rock Salt", cursive;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  font-weight: 100;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7), -4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+a:hover {
+  color: rgb(255, 217, 15);
+}
+
+@media screen and (max-width: 360px) {
+  #main,
+  #img-div,
+  #img,
+  #img-caption,
+  body {
+    margin: 0;
+    min-width: unset;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 15px;
+    }
+  h1 {
+    font-size: 20px;
+  }
+  #title p,
+  #img-caption,
+  ul,
+  .quote {
+    font-size: 12px;
+  }
+}
+</style>
+<head>
+  <title>Tribute page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="main">
+    <div id="title">
+      <h1>CHRISTINA GRIMMIE</h1>
+      <p>An American singer, songwriter, actress, and YouTuber. She became popular after posting covers of popular songs on her YouTube channel. Her popularity increased when she took part in the NBC singing completion ‘The Voice.’ Born in Marlton, New Jersey, US, Grimmie was enthusiastic about singing from an early age.</p>
+    </div>
+
+    <div id="img-div">
+      <img id="image" src="https://hdwallpaperim.com/wp-content/uploads/2017/08/22/157860-Christina_Grimmie-women-auburn_hair.jpg" alt="Christina Grimmie">
+
+      <p id="img-caption">Christina Grimmie is known for Poofy long black hair, Black Eyeliner, Black Open-Fingered, Glove on the left hand, Her Gamer Shirts
+and Her Green Headphones.</p>
+    </div>
+
+    <div id="tribute-info">
+      <h3>Biography</h3>
+      <ul>
+        <li>She was born on March 12, 1994 in Marlton, New Jersey, USA</li>
+        <li>She died on June 10, 2016 in Orlando, Florida, USA  (homicide by gunshot).</li> <li>Her birth Name is Christina Victoria Grimmie</li>
+        <li>Her Nickname is Grimmie</li>
+        <li>Her Height is 5' 5" (1.65 m)</li>
+        <h4><center>More fun facts about Christina...</center></h4>
+        <li>Christina was able to play the piano, some drums, some guitar, and even a bit of the flute.</li>
+        <li>She loved Christina Aguilera & Skrillex.</li>
+        <li>Christina's favorite TV shows were Supernatural (2005), Drake & Josh (2004), and SpongeBob SquarePants (1999).</li>
+        <li>She had Italian and Romanian ancestry.</li>
+        <li>Called her fans "Team Grimmie" and "Frands" (Friends and Fans).</li>
+      </ul>
+      <h3>Award/s</h3>
+      <ul>
+        <li>Teen Choice Award for Choice Web Star: Music: 
+        Christina Grimmie was just awarded her very first surfboard at the 2016 Teen Choice Awards tonight. The singer won the Choice Web Star: Music award, where she shared the nomination with stars like Boyce Avenue and Johnny Orlando.</li>
+      </ul>
+      <h3>Career and Major Works</h3>
+      <ul>
+      <li>After creating her YouTube channel in 2009, Christina Grimmie started posting videos. She soon gained popularity for her cover of ‘Party in the USA,’ a popular song by Miley Cyrus. Along with Sam Tsui, a fellow YouTuber, she worked on the cover of ‘Just a Dream,’ a song by the popular American rapper Nelly, which earned more than 172 million views. Her popularity increased gradually and by April 2013, she had gained over two million subscribers on her channel.</li>
+      <li>She released her first extended play ‘Find Me’ in 2011. It was an average success. The same year, she also performed at several significant events, such as the UNICEF charity concert. She also appeared on shows like ‘The Ellen DeGeneres Show’ and the 39th ‘American Music Awards.’</li>
+      <li>Her first extended play ‘Find Me’ can be regarded as the most significant work in her career. The EP, which was released independently, debuted at number 35 on the ‘US Billboard 200.’ It also debuted at the top ten of the ‘Independent Albums Chart’ in the US. With tracks, such as ‘Ugly,’ ‘Advice,’ ‘King of Thieves,’ and ‘Liar Liar,’ the album peaked at number 11 at the ‘US Digital Albums.’</li>
+      <li>Christina Grimmie also appeared in an important role in ‘The Matchbreaker,’ a 2016 independent romantic comedy. The film, which was produced and directed by Caleb Vetter, also starred actors like Wesley Elder, Osric Chau, Victoria Jackson, and Tessa Violet. The film is about a man who breaks up relationships of girls at the behest of their disapproving parents. ‘The Matchbreaker’ premiered on October 4, 2016, at 'Arclight Cinema Dome' in Los Angeles. The premiere, which was attended by Grimmie's family and friends, focused on honoring the late performer.</li>
+      </ul>
+      </ul>
+    </div>
+    <div class="quote">
+      <p class="item1">"I want longevity; I love music, being a musician is the greatest gift in the world to me, and if I were to get signed to a label, my family and team around me are always gonna be there to make sure they want the very best for me. My fans are what it's all about..."</p>
+      <p class="item2">Christina Grimmie</p>
+    </div>
+    <h3 class="link">
+      Learn more about Christina Grimmie on:
+      <a id="tribute-link" href="https://www.thefamouspeople.com/profiles/christina-grimmie-32824.php" target="_blank">The Famous People</a>
+    </h3>
+</body>
+</html>
