@@ -1,0 +1,315 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Receipt Input Form</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+
+body {
+  font-family: "Arial";
+  background-color: white;
+}
+
+h1 {
+  color: black;
+  padding: 70px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 80px;
+  font-family: Arial;
+  background-color: grey;
+ 
+}
+
+h2 {
+  text-align: center; 
+  font-size: 25px;
+  font-weight:700;
+  line-height:0em;
+}
+
+h3 {
+  color: black;
+  font-size: 26px;
+}
+h4 {
+  color: black;
+  font-size: 26px;
+  
+}
+
+b {
+  color: black;
+}
+
+.table1 {
+  width: 100%;
+  padding: 30px 85px 0px 85px;
+}
+
+.table1 th {
+  color:black;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.table1 td {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+.table2 {
+  width: 80%;
+  color: black;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table2 th {
+  padding: 15px;
+  font-weight: 500;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+.table2 td {
+  color: black;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.table3 {
+  color:  black;
+  margin-right: 50px;
+  margin-left: auto;
+  padding: 15px 45px 15px 0px;
+  width: 30%;
+  
+}
+
+.table4 {
+  float: right;
+  width: 70%;
+  padding: 10px;
+  text-align: right;
+  position: relative;
+  background-color: grey;
+}
+
+.table4 tr, td {
+  padding-bottom: 10px;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+  border: 20px solid black;
+}
+
+#total {
+  width: 20%;
+  padding: 25px 25px 0px 25px;
+  text-align: right;
+  margin-right: 90px;
+  margin-left: auto;
+  border: 4px solid black;
+}
+
+#footer {
+  position: relative;
+  bottom: 0px;
+  padding: 10px;
+  margin: 80px;
+  border-top: 2px solid black;
+}
+
+input[type="text"], input[type="date"] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  margin: 3px;
+  width: 200px;
+  height: 30px;
+  transition: 1s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  transition: 1s;
+  border-bottom: 1px solid black;
+}
+
+input[type="text"]::placeholder {
+  color:black;
+  transition: 1s;
+}
+
+input[type="date"] {
+  font-family: "Arial";
+  transition: 1s;
+  text-transform: uppercase;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  transition: 1s;
+  border-bottom: 1px solid black;
+}
+
+input[type="date"]::placeholder {
+  color:black;
+  transition: 1s;
+}
+
+input[type="number"] {
+  text-align: center;
+  margin-left: 15px;
+  font-size: 16px;
+  color: black;
+  transition: 1s;
+  outline: none;
+  border: none;
+}
+
+input[type="number"]::placeholder {
+  color: black;
+  transition: 1s;
+}
+
+#rate{
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 0em;
+  padding: 10px;
+  color: black;
+  width: 115px;
+}
+
+#label{
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Arial';
+  border: none;
+  padding: 0px 10px 0px 10px;
+  transition: 1s;
+}
+
+#label::placeholder{
+  color: black;
+  transition: 1s;
+}
+
+#label:focus, #label:hover{
+  color:black;
+  background:black;
+  transition: 1s;
+}
+
+</style>
+<body>
+  <div id="container">
+  <h1>NandN</h1>
+    <h2>Invoice Form</h2>
+  <table class="table1">
+    <tr>
+      <th align="left">DUE AMOUNT</th>
+      <th align="left">NAME</th>
+      <th>&nbsp;</th>
+      <th align="right">INVOICE NO.</th>
+    </tr>
+    <tr>
+      <td><input type="text" placeholder="e.g., 8 400€"></td>
+      <td><input type="text" placeholder="Enter name.."></td>
+      <td>&nbsp;</td>
+      <td align="right"><input type="text" placeholder="e.g., #201805"></td>
+    </tr>
+    <tr>
+      <th align="left">DUE DATE</th>
+      <th align="left">SHIPPED TO</th>
+      <th>&nbsp;</th>
+      <th align="right">BILLING DATE</th>
+    </tr>
+    <tr>
+      <td><input type="date" id="date"></td>
+      <td><input type="text" placeholder="Enter address.."></td>
+      <td>&nbsp;</td>
+      <td align="right"><input type="date" id="date" data-date="" data-date-format="DD MMMM YYYY" value="2015-08-09"></td>
+    </tr>
+  </table>
+
+  <table class="table2">
+    <tr>
+      <th align="left">NO.</th>
+      <th colspan="2" align="left">DESCRIPTION</th>
+      <th>KILO</th>
+      <th>RATE</th>
+      <th>AMOUNT</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td colspan="2"><input type="text" id="label" placeholder="Baked Goods"></td>
+      <td align="center"><input type="number" min="1" max="50" placeholder="40"></td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="50" placeholder="40">€</td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="3000" placeholder="1600">€</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td colspan="2"><input type="text" id="label" placeholder="Dried Beef"></td>
+      <td align="center"><input type="number" min="1" max="50" placeholder="30"></td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="50" placeholder="40">€</td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="3000" placeholder="1200">€</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td colspan="2"><input type="text" id="label" placeholder="Cookies"></td>
+      <td align="center"><input type="number" min="1" max="50" placeholder="35"></td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="50" placeholder="40">€</td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="3000" placeholder="2800">€</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td colspan="2"><input type="text" id="label" placeholder="Dried Nuts and Fruits"></td>
+      <td align="center"><input type="number" min="1" max="50" placeholder="35"></td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="50" placeholder="40">€</td>
+      <td align="center"><input type="number" dir="rtl" min="1" max="3000" placeholder="1400">€</td>
+    </tr>
+  </table><br>
+  <table class="table3">
+    <tr>
+      <td>Sub Total</td>
+      <td><input type="number" dir="rtl" min="1" max="30000" placeholder="7000">€</td>
+    </tr>
+    <tr>
+      <td>VAT - 20%</td>
+      <td><input type="number" dir="rtl" min="1" max="3000" placeholder="408">€</td>
+    </tr>
+  </table></br>
+  <div id="total"><b>TOTAL DUE</b><br><h2><input type="number" id="rate" dir="rtl" min="1" max="30000" placeholder="8400">€</h2></div>
+  <br></br><br></br><br></br>
+
+<div id="footer">
+  <table class="table4">
+    <tr>
+      <td><input type="text" id="label" placeholder="Nehemiah Dagohoy"></td>
+      <td>_NandNph</td>
+    </tr>
+    <tr>
+      <td><input type="text" id="label" placeholder="111-222-3333"></td>
+      <td>NadnN.co</td>
+    </tr>
+  </table>
+  <h4>Thank You!</h4>
+  <br></br><br></br>
+</div>
+</div>
+</body>
+</html>
