@@ -16,13 +16,12 @@ a{
  width:100%;
  height: 100vh;
  box-sizing: border-box;
- background-size: 450px;
+ background-size: 400px;
  background-position: right bottom;
- background-repeat: repeat-x;
+ background-repeat: no-repeat;
  background-image: url("https://ndagohoy.github.io/Dagohoy_WebDev_Midterm/exam/background.jpg");
  background-color: white;
  text-align: center;
- 
 }
 nav{
  display:flex;
