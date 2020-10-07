@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon"
+        href="https://turbologo.com/articles/wp-content/uploads/2019/12/logo-for-gamers-logo-cover-1280x720.png">
+    </head>
+    <body>
+        
+        
+       <div class="bg" style="background-image: url(https://ak.picdn.net/shutterstock/videos/1023388795/thumb/1.jpg);">
+        
+
+       </div>
+        <div class="right">
+            <div class="header">
+                <img class="logo"
+                
+                     <h1><b>Registration Form</b></h1>
+        <p>Hi welcome to my website, all fields <br>
+            are required to filled.</p>
+            </div>
+            <form id="form" onsubmit="return validateForm()">
+                <h3>Fill up the form here:</h3>
+                <table >
+                    <tr>
+                        <td align="right">
+                            Last Name:
+                        </td>
+                        <td>
+                            <input class="inp" id="lnf" type ="text"name ="Lname" placeholder="Ex. Stone" >
+                            <br> <span class="error" id="lname_error">Last name is required!</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            First Name:
+                        </td>
+                        <td>
+                            <input class="inp" id="fnf" type ="text" name="Fname" placeholder="Ex. Joe " >
+                            <br> <span class="error" id="fname_error">First name is required!</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                           Email:
+                        </td>
+                        <td>
+                            <input required onkeydown="validateEmail()" class="inp eml" id="emf" type ="Email" name ="Email" placeholder="Ex. joestone@gmail.com" >
+                            <br> <span id="er_em" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                         Password:
+                        </td>
+                        <td>
+                            <input required onkeydown="validatePassword()" class="inp" id="pwf" type ="Password" name ="Pword" placeholder="Type Password" minlength="3">
+                            <br> <span id="pwder" class="error">Error</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            Gender:
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="radio">
+                            Male <input id="male" class="rad" type="radio" name="gender" >
+                            Female <input id="female" class="rad" type="radio" name="gender" >
+                          Others <input id="female" class="rad" type="radio" name="gender" >
+                        
+                        </td>
+                        
+                    </tr>
+                    
+                 </table>
+                        <div id="gner" class="error">Please Select Gender</div>
+                    <div class="terms"> <input type="checkbox" id="chkb" name="agree">I accept<a class="link" href=""> terms and conditions.</a><br> <input type="checkbox" id="chkb" name="agree">I accept<a class="link" href=""> terms and conditions 2.</a></br></div>
+                    <span id="chke" class="error">Read and accept terms and conditions</span>
+                    <div>
+                        
+                         <table class="sign">
+                             <tr>
+                                 <td>
+                                   <button type="sign up">Sign Up</button>
+                                 </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>     </td>
+                                 <td>
+                                    <button name="reset" type="reset">Reset</button>
+                                 </td>
+                             </tr>
+                         </table>
+                         
+                    
+                     </div>
+            </form>
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>
