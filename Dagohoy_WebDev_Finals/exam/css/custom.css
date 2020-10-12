@@ -1,0 +1,35 @@
+.masthead {
+  height: 100px;
+  min-height: 300px;
+  background-image: url('https://www.xmple.com/wallpaper/gradient-blue-white-linear-2736x1824-c2-ffffff-add8e6-a-90-f-14.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myDiv {
+  width: 320px;
+  margin: auto;
+  border: 5px outset lightblue;
+  background-color: white;
+  text-align: center;
+  display: block;  
+}
+
+.myDiv1 {
+  width: 320px;
+  margin: auto;
+  border: 5px outset lightblue;
+  background-color: white;
+  text-align: center;
+  display: block; 
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50;
+  background-color: #E0EEEE;
+  color: white;
+  text-align: left;
+}
